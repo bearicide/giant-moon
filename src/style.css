@@ -1,0 +1,27 @@
+
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#020205;color:#fff;font-family:Georgia,'Times New Roman',serif}
+#game{position:fixed;inset:0;width:100%;height:100%;display:block}
+.screen{position:fixed;inset:0;z-index:20;display:none;align-items:center;justify-content:center;padding:20px;background:radial-gradient(circle at 70% 20%,rgba(92,130,255,.15),transparent 25%),rgba(0,0,0,.78)}
+.screen.active{display:flex}
+.panel{width:min(480px,94vw);padding:24px;border:1px solid rgba(255,255,255,.25);border-radius:20px;background:rgba(7,8,15,.84);box-shadow:0 25px 90px #000;backdrop-filter:blur(8px)}
+.hero{text-align:center}
+.moon{width:92px;height:92px;margin:0 auto 10px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#f3f3f3,#888 62%,#333);box-shadow:0 0 40px rgba(180,200,255,.35)}
+.kicker{letter-spacing:.18em;color:#b8c4ff;font:700 12px system-ui}
+h1{font-size:clamp(3rem,12vw,6rem);line-height:.82;margin:8px 0;text-shadow:0 8px 0 #111}
+h2{margin-top:0}
+.tagline{color:#d6d6d6}
+button{display:block;width:100%;margin:9px 0;padding:13px 16px;color:#fff;font:900 14px system-ui;letter-spacing:.08em;border:1px solid rgba(255,255,255,.35);border-radius:13px;background:linear-gradient(180deg,#242a40,#10121b);cursor:pointer}
+button:hover{filter:brightness(1.2)}
+label{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+label input[type=range]{width:45%}
+#hud{position:fixed;z-index:5;top:10px;left:10px;padding:12px 13px;line-height:1.35;border:1px solid rgba(255,255,255,.22);border-radius:13px;background:rgba(0,0,0,.5);font:14px system-ui}
+.tiny{margin-top:6px;color:#bbb;font-size:12px}
+#achievement{position:fixed;z-index:40;right:14px;bottom:14px;display:none;min-width:245px;padding:14px 16px;border:1px solid rgba(255,255,255,.28);border-radius:14px;background:rgba(0,0,0,.8);font:15px system-ui;box-shadow:0 18px 60px #000}
+#achievement strong{display:block;font-size:17px}
+#achievement span{color:#d7e1ff}
+#mobileControls{display:none;position:fixed;z-index:8;inset:0;pointer-events:none}
+#stick{position:absolute;left:22px;bottom:28px;width:118px;height:118px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.06);pointer-events:auto;touch-action:none}
+#nub{position:absolute;left:39px;top:39px;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.55)}
+#jumpBtn{position:absolute;right:22px;bottom:42px;width:108px;height:78px;pointer-events:auto}
+@media(pointer:coarse){#mobileControls{display:block}#hud{font-size:12px}}
