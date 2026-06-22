@@ -13,8 +13,8 @@
       <div class="moon"></div>
       <p class="kicker">MATTBEAR FIELD TEST</p>
       <h1>GIANT<br>MOON</h1>
-      <p class="tagline">A giant. A moon. A stupid amount of walking.</p>
-      <button id="newMoonBtn">NEW MOON</button>
+      <p class="tagline">A large, mostly empty place where achievements do the storytelling. Civilization has peaked, apparently.</p>
+      <button id="newMoonBtn">NEW WALK</button>
       <button id="continueBtn">CONTINUE</button>
       <button id="settingsBtn">SETTINGS</button>
       <button id="creditsBtn">CREDITS</button>
@@ -26,7 +26,7 @@
       <h2>SETTINGS</h2>
       <label><span>Invert Camera Y</span><input id="invertToggle" type="checkbox" checked /></label>
       <label><span>Sensitivity</span><input id="sensitivityRange" type="range" min="1" max="10" value="5" /></label>
-      <label><span>Camera Distance</span><input id="camDistanceRange" type="range" min="70" max="200" value="120" /></label>
+      <label><span>Camera Distance</span><input id="camDistanceRange" type="range" min="90" max="240" value="145" /></label>
       <button id="backFromSettings">BACK</button>
     </div>
   </section>
@@ -34,9 +34,9 @@
   <section id="creditsMenu" class="screen">
     <div class="panel">
       <h2>CREDITS</h2>
-      <p>GIANT MOON v0.3</p>
+      <p>GIANT MOON v0.4</p>
       <p>Prototype for Bearicide / MATTBEAR.</p>
-      <p>No story. Just big moon wandering.</p>
+      <p>No plot dump. No cutscenes. Just walking, distance, landmarks, and tiny existential receipts.</p>
       <button id="backFromCredits">BACK</button>
     </div>
   </section>
@@ -52,12 +52,19 @@
 
   <div id="hud">
     <strong>GIANT MOON</strong>
-    <div>Seed: <span id="seedValue">42069</span></div>
     <div>XP: <span id="xpValue">0</span></div>
     <div>Distance: <span id="distanceValue">0.00</span> km</div>
-    <div>Landmarks: <span id="landmarkValue">0</span>/8</div>
+    <div>Markers: <span id="landmarkValue">0</span>/8</div>
+    <div>Story: <span id="storyValue">achievement fragments</span></div>
     <div class="tiny">WASD move • drag look • Space jump • Esc pause</div>
   </div>
+
+  <aside id="achievementLog">
+    <h2>Minimal Achievements</h2>
+    <ul id="achievementList"></ul>
+  </aside>
+
+  <div id="storyBeat"></div>
 
   <div id="mobileControls">
     <div id="stick"><div id="nub"></div></div>
