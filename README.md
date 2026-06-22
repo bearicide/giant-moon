@@ -1,6 +1,8 @@
-# GIANT MOON v0.3
+# GIANT MOON v0.4
 
-A lightweight Three.js/Vite prototype.
+A lightweight Three.js/Vite walking prototype set in a wide moonlit space.
+
+Story delivery is intentionally minimal. Progress comes through distance, landmarks, stillness, and achievement fragments.
 
 ## Run
 ```bash
@@ -20,5 +22,12 @@ npm run build
 - Escape pause
 - Mobile joystick + jump button
 
-## Notes
-Invert Y is default. Mundane achievements pay the most XP.
+## Current Features
+- Large 3D lunar terrain
+- Huge procedural moon on the horizon
+- Sparse landmarks
+- Fog and stars
+- Distance tracking
+- Achievement log
+- Story beats triggered by walking
+- Save / continue support
